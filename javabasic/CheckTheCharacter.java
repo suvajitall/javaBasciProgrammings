@@ -2,30 +2,35 @@ package javabasic;
 
 public class CheckTheCharacter {
 	public static void main(String args[]) {
-		String str = "S@#U%!V$#A";
-		String rev = "";
-		char swaps=' ';
+		String str = "A1234B567C890D";
+		String new_str = "";
+		int left=0;
+		int right=str.length()-1;
 		char[] ch = str.toCharArray();
-		int i=0;
-		int j = ch.length-1;
 		
-		while(i < j) {
-			if(!Character.isLetterOrDigit(ch[i])) {
-				i++;
+		while(left<right) {
+			if(!Character.isLetter(ch[left])) {
+				left++;
+				
 			}
-			else if(!Character.isLetterOrDigit(ch[j])) {
-				j--;
+			else if(!Character.isLetter(ch[right])) {
+				right--;
 			}
 			else {
-				
-				swaps = ch[i];
-				ch[i]=ch[j];
-				ch[j] = swaps;
-				i++;
-				j--;
+				char temp = ch[left];
+				ch[left] = ch[right];
+				ch[right] = temp;
+				left++;
+				right--;
 			}
 		}
 		
-		System.out.println("Reversed: " + new String(ch));
+		for(char ch1 : ch) {
+			new_str = new_str + ch1;
+		}
+		
+		System.out.println(new_str);
+		
+		
 	}
 }

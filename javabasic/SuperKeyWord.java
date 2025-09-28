@@ -9,6 +9,9 @@ class TestSUperKeyword{
 	TestSUperKeyword() {
 		System.out.println(" >>> Super class constructor");
 	}
+	TestSUperKeyword(String str) {
+		System.out.println(" >>> str constructor");
+	}
 }
 public class SuperKeyWord extends TestSUperKeyword{
 	

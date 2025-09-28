@@ -3,17 +3,13 @@ import java.util.*;
 
 public class CheckVowels {
 	public static void main(String args[]) {
-		String str = "A clever fox never jumps one time";
-		String vwl = "aeiouAEIO";
-		Set<Character> st = new LinkedHashSet<>();
-		for(int i=0;i<str.length();i++) {
-			char ch = str.charAt(i);
-			if(vwl.indexOf(ch)!=-1) {
-				//System.out.println("Vowel found: "+ ch);
-				st.add(ch);
+		String str = "A Clever dog never jumps one time";
+		String vwl = "aeiouAEIOU";
+		char[] ch = str.toCharArray();
+		for(char ch1 : ch) {
+			if(vwl.indexOf(ch1)!=-1) {
+				System.out.println(ch1 + " --> This is vowel");
 			}
 		}
-		System.out.println(st);
-		System.out.println(st.size());
 	}
 }

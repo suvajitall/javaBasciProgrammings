@@ -3,34 +3,25 @@ import java.util.*;
 
 public class MapList {
 	public static void main(String args[]) {
-		
 		List<Map<String,String>> lst = new ArrayList<>();
+		Map<String,String> mp = new LinkedHashMap<>();
+		mp.put("Ram","10");
+		mp.put("Address","India");
+		mp.put("Age","50");
 		
-		Map<String, String> mp = new LinkedHashMap<>();
-		mp.put("name", "Suvajit");
-		mp.put("org","Infosys");
-		
-		Map<String, String> mp2 = new LinkedHashMap<>();
-		mp2.put("name", "Ram");
-		mp2.put("org","TCS");
+		Map<String,String> mp1 = new LinkedHashMap<>();
+		mp1.put("Shyam","20");
+		mp1.put("Address","Pakistan");
+		mp1.put("Age","60");
 		
 		lst.add(mp);
-		lst.add(mp2);
-		int i=0;
+		lst.add(mp1);
 		
-		for(Map<String, String> details : lst) {
-			i++;
-			System.out.println("Details of candidate : "+ i);
-			for(Map.Entry<String, String> emp : details.entrySet()) {
-				
-				System.out.println(emp.getKey()+" : "+emp.getValue());
+		for(Map<String,String> details : lst){
+			for(Map.Entry<String,String> details1 : mp.entrySet()){
+				System.out.println(details1.getKey()+"-->"+details1.getValue());
 			}
-			System.out.println("*******************************************");
+			System.out.println("*****************************");
 		}
-		
-		/*for(Map.Entry<String, String> emp : mp.entrySet()) {
-			
-			System.out.println(emp.getKey()+" : "+emp.getValue());
-		}*/
 	}
 }
