@@ -3,19 +3,11 @@ package javabasic;
 public class ReversWord {
 	public static void main(String args[]) {
 		String str = "Hello world";
-		String[] spl = str.split(" ");
-		StringBuilder stb = new StringBuilder();
-		
-		for(int i=0; i<spl.length;i++) {
-			for(int j=spl[i].length()-1;j>=0;j--) {
-				stb.append(spl[i].charAt(j));
-			}
-			 if (i < spl.length - 1) {
-				 stb.append(" ");
-	            }
+		char[] ch = str.toCharArray();
+		String rev = "";
+		for(int i=str.length()-1;i>=0;i--) {
+			rev = rev + ch[i];
 		}
-		
-		System.out.print(stb);
-		
+		System.out.println(rev);
 	}
 }
