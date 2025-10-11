@@ -3,15 +3,14 @@ package javabasic;
 public class CheckTheCharacter {
 	public static void main(String args[]) {
 		String str = "A1234B567C890D";
-		String new_str = "";
-		int left=0;
-		int right=str.length()-1;
+		String str1 = "";
 		char[] ch = str.toCharArray();
+		int left = 0;
+		int right = str.length()-1;
 		
 		while(left<right) {
 			if(!Character.isLetter(ch[left])) {
 				left++;
-				
 			}
 			else if(!Character.isLetter(ch[right])) {
 				right--;
@@ -26,10 +25,12 @@ public class CheckTheCharacter {
 		}
 		
 		for(char ch1 : ch) {
-			new_str = new_str + ch1;
+			str1 = str1 + ch1;
 		}
 		
-		System.out.println(new_str);
+		System.out.println(str1);
+		
+		
 		
 		
 	}

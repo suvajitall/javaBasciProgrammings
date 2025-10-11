@@ -22,7 +22,6 @@ public class MapSortByValue {
 			mp.put("Guava",50);
 			List<Map.Entry<String,Integer>> lst = new ArrayList<>(mp.entrySet());
 			lst.sort(Map.Entry.<String,Integer>comparingByValue().reversed());
-			System.out.println(lst);
 			
 			}
 		}

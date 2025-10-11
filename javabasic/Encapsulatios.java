@@ -3,14 +3,14 @@ package javabasic;
 class Enc{
 	private String name;
 	private String address;
-	public void set_details(String name, String address) {
-		this.name = name;
-		this.address = address;
+	
+	public void set_details(String name1,String address1) {
+		this.name = name1;
+		this.address = address1;
 	}
 	
 	public void get_employee_details() {
-		System.out.println("Employee name : "+name);
-		System.out.println("Employee address : "+address);
+		System.out.println(name +" ==> "+address);
 	}
 }
 public class Encapsulatios {

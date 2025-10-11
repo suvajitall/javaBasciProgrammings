@@ -8,7 +8,7 @@ public class CheckVowels {
 		char[] ch = str.toCharArray();
 		for(char ch1 : ch) {
 			if(vwl.indexOf(ch1)!=-1) {
-				System.out.println(ch1 + " --> This is vowel");
+				System.out.println(ch1);
 			}
 		}
 	}
