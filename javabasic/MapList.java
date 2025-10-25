@@ -17,11 +17,13 @@ public class MapList {
 		lst.add(mp);
 		lst.add(mp1);
 		
-		for(Map<String,String> details : lst){
-			for(Map.Entry<String,String> details1 : mp.entrySet()){
-				System.out.println(details1.getKey()+"-->"+details1.getValue());
+		for(Map<String, String> mps : lst) {
+			for(Map.Entry<String,String> dtls : mps.entrySet()) {
+				System.out.println(dtls.getKey()+"==="+dtls.getValue());
 			}
-			System.out.println("*****************************");
+			System.out.println("-------------------------");
 		}
 	}
 }
+
+

@@ -13,5 +13,5 @@ public class RemoveSpecialCharacter {
 		}
 		
 		System.out.println(str1);
-	}
+	} 
 }

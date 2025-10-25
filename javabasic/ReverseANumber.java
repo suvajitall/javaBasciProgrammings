@@ -3,7 +3,7 @@ package javabasic;
 public class ReverseANumber {
 	public class ReverseNumber {
 	    public static void main(String[] args) {
-	        int num = 12345;
+	        int num = 12345; 
 	        int reversed = 0;
 	        while (num != 0) {
 	            int digit = num % 10;

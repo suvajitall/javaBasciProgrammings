@@ -8,32 +8,35 @@ public class ReverseString {
 		String name = "S^&*U@@!V++A";
 		
 		String str1 = "";
+		
 		char[] ch = name.toCharArray();
-		int left = 0;
-		int right = name.length()-1;
 		
-		while(left < right) {
-			if(!Character.isLetterOrDigit(ch[left])) {
-				left++;
+		int left=0;
+		int right=name.length()-1;
+		
+		while(left<right) {
+				if(!Character.isLetterOrDigit(ch[left])) {
+					left++;
+					//right--;
+				}
+				else if(!Character.isLetterOrDigit(ch[right])) {
+					right--;
+				}
+				else {
+					char swap = ch[left];
+					ch[left]=ch[right];
+					ch[right]=swap;
+					left++;
+					right--;
+				}
 			}
-			else if(!Character.isLetterOrDigit(ch[right])) {
-				right--;
-			}
-			else {
-				char temp = ch[left];
-				ch[left] = ch[right];
-				ch[right] = temp;
-				
-				left++;
-				right--;
-			}
-			
-			
+		
+		for(int i=0;i<ch.length;i++) {
+			str1 = str1+ch[i];
 		}
-		System.out.print(new String(ch));
-		}
+		System.out.println(str1);
 		
-		
+	}	
 		
 	}
 

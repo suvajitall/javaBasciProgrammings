@@ -11,6 +11,8 @@ public class UniqueSubString {
 			}
 		}
 		
-		System.out.println(st);
+		for(String st1:st) {
+			System.out.println(st1);
+		}
 	}
 }

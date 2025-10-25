@@ -12,5 +12,5 @@ public class RemoveWhiteSpace {
 		}
 		
 		System.out.println(rv);
-	}
+	} 
 }
