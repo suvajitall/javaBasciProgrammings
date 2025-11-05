@@ -3,20 +3,20 @@ package javabasic;
 class TestSUperKeyword{
 	String str = "Parent class variable";
 	public void display() {
-		System.out.println("This is from TestSuperKeyword");
+		System.out.println("Display function from TestSuperKeyword");
 	}
 	
 	TestSUperKeyword() {
-		System.out.println(" >>> Super class constructor");
+		System.out.println(" >>> Non Parameterize constructor of TestSUperKeyword class");
 	}
 	TestSUperKeyword(String str) {
-		System.out.println(" >>> str constructor");
+		System.out.println(" >>> Parameterize constructor of TestSUperKeyword class");
 	}
 }
 public class SuperKeyWord extends TestSUperKeyword{
 	
 	SuperKeyWord(){
-		super();
+		super("test");
 	} 
 	
 	String str = "Child class variable";

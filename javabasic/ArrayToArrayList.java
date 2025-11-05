@@ -3,12 +3,13 @@ import java.util.*;
 
 public class ArrayToArrayList {
 	public static void main(String args[]) {
-		int[] arr = {5,2,6,0,8,7,10};
+		int[] arr = {2,5,1,0,5,7};
 		List<Integer> lst = new ArrayList<>();
-		for(int arr1: arr) {
-			lst.add(arr1);
+		
+		for(int i=0;i<arr.length;i++) {
+			lst.add(arr[i]);
 		}
 		
-		System.out.print(lst);
+		System.out.println(lst);
 	}
 }
