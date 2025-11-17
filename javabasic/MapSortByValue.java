@@ -15,17 +15,15 @@ public class MapSortByValue {
 	}*/
 	
 	public static void main(String args[]) {
-			Map<String, Integer> mp = new LinkedHashMap<>();
-			mp.put("Apple",20);
-			mp.put("Orange",30);
-			mp.put("Mango",10);
-			mp.put("Guava",50);
+			Map<String,Integer> mp = new LinkedHashMap<>();
+			mp.put("A",10);
+			mp.put("B",40);
+			mp.put("C",30);
 			
 			List<Map.Entry<String,Integer>> lst = new ArrayList<>(mp.entrySet());
-			lst.sort(Map.Entry.<String,Integer>comparingByValue());
+			lst.sort(Map.Entry.<String,Integer>comparingByValue().reversed());
 			
-			System.out.println(lst);
-			
+			System.out.println(lst.toString());
 	}
 	
 	

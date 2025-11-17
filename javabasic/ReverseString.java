@@ -6,34 +6,36 @@ public class ReverseString {
 		
 		
 		String name = "S^&*U@@!V++A";
+		//A^&*V@@!U++S
 		
 		String str1 = "";
-		
 		char[] ch = name.toCharArray();
 		
 		int left=0;
-		int right=name.length()-1;
+		int right = name.length()-1;
 		
 		while(left<right) {
-				if(!Character.isLetterOrDigit(ch[left])) {
-					left++;
-					//right--;
-				}
-				else if(!Character.isLetterOrDigit(ch[right])) {
-					right--;
-				}
-				else {
-					char swap = ch[left];
-					ch[left]=ch[right];
-					ch[right]=swap;
-					left++;
-					right--;
-				}
+			if(!Character.isLetter(ch[left])) {
+				left++;
+				
 			}
-		
-		for(int i=0;i<ch.length;i++) {
-			str1 = str1+ch[i];
+			else if(!Character.isLetter(ch[right])) {
+				right--;
+			}
+			
+			else {
+				char temp = ch[left];
+				ch[left] = ch[right];
+				ch[right] = temp;
+				left++;
+				right--;
+			}
 		}
+		
+		for(char ch1 : ch) {
+			str1 = str1 + ch1;
+		}
+		
 		System.out.println(str1);
 		
 	}	
