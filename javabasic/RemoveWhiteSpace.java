@@ -3,14 +3,13 @@ package javabasic;
 public class RemoveWhiteSpace {
 	public static void main(String argsp[]) {
 		String str = "Hello world";
-		String rv = "";
+		String str1 = "";
 		char[] ch = str.toCharArray();
-		for(int i=0;i<ch.length;i++) {
-			if(ch[i]!=' ') {
-				rv = rv + ch[i];
+		for(char ch1 : ch) {
+			if(Character.isLetterOrDigit(ch1)) {
+				str1 = str1 + ch1;
 			}
 		}
-		
-		System.out.println(rv);
+		System.out.println(str1);
 	} 
 }
