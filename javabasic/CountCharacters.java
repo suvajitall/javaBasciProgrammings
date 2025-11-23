@@ -10,10 +10,11 @@ public class CountCharacters {
 			mp.put(ch[i], mp.getOrDefault(ch[i],0)+1);
 			
 		}
-		
-		for(Map.Entry<Character,Integer> count : mp.entrySet()) {
+		System.out.println(mp.entrySet());
+		System.out.println("==================================================");
+		/*for(Map.Entry<Character,Integer> count : mp.entrySet()) {
 			System.out.println(count.getKey()+" :: "+count.getValue());
-		}
+		}*/
 		
 	}
 }
