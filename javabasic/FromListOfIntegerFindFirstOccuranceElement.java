@@ -3,14 +3,16 @@ import java.util.*;
 
 public class FromListOfIntegerFindFirstOccuranceElement {
 	public static void main(String[] args) {
+		List<Integer> lst = new ArrayList<>();
 		Set<Integer> st = new LinkedHashSet<>();
 		Integer firstNum = null;
-		st.add(10);
-		st.add(12);
-		st.add(15);
-		st.add(11);
-		st.add(12);
-		for(int num : st) {
+		lst.add(10);
+		lst.add(9);
+		lst.add(15);
+		lst.add(13);
+		lst.add(15);
+		lst.add(13);
+		for(int num : lst) {
 			if(st.contains(num)) {
 				firstNum = num;
 				break;

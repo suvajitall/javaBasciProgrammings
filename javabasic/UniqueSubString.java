@@ -6,7 +6,7 @@ public class UniqueSubString {
 		String str = "aabb";
 		Set<String> st = new HashSet<>();
 		for(int i=0;i<str.length();i++) {
-			for(int j=i+1;j<str.length();j++) {
+			for(int j=i+1;j<=str.length();j++) {
 				st.add(str.substring(i,j));
 			}
 		}

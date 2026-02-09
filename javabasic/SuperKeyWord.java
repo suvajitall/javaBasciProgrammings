@@ -10,6 +10,7 @@ class TestSUperKeyword{
 		System.out.println(" >>> Non Parameterize constructor of TestSUperKeyword class");
 	}
 	TestSUperKeyword(String str) {
+		//this();
 		System.out.println(" >>> Parameterize constructor of TestSUperKeyword class");
 	}
 }

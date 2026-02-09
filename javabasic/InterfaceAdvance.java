@@ -5,7 +5,8 @@ interface inter_face{
 	
 	/*public void runs() {
 		System.out.println("this is run method");
-	}*/ /* ==================================== >> This will give error, because interface contains public abstract method
+	}
+	 /* ==================================== >> This will give error, because interface contains public abstract method
 	, default method with body and static method with body */
 	
 	static void run() {

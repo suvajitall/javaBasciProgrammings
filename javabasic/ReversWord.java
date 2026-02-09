@@ -19,7 +19,7 @@ public class ReversWord {
 			}
 		}
 		
-		System.out.println(rev_Str);
+		System.out.println(rev_Str.trim());
 		
 	}
 }

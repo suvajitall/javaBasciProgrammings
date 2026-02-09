@@ -3,7 +3,7 @@ import java.util.*;
 
 public class FirstNonRepeatingCharacterstring {
 	public static void main(String args[]) {
-		String str = "Programming";
+		String str = "PrXogrammingP";
 		Map<Character,Integer> mp  = new LinkedHashMap<>();
 		char[] ch = str.toCharArray();
 		
